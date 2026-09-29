@@ -1,6 +1,6 @@
 # CleanScrape agent skills
 
-Practical guides for turning app reviews and search-interest data into useful research.
+Practical guides for turning web data into useful comparisons, shortlists and research.
 
 These skills give an AI assistant the inputs, field definitions and analysis steps it needs to work with CleanScrape's Apify Actors. Start with an existing export at no collection cost, or use your own Apify account when you need fresh data.
 
@@ -8,10 +8,18 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
+Eight focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+
 | Task | Skill | What you get |
 | --- | --- | --- |
 | Compare iOS and Android feedback | [App review comparison](skills/apify-cleanscrape-app-reviews/SKILL.md) | Ratings by store, evidence-backed themes and clearly labelled coverage |
 | Research seasonal search interest | [Google Trends research](skills/apify-cleanscrape-google-trends/SKILL.md) | A comparable timeline, a chart-ready table and an explanation of what the scores mean |
+| Map Your Show exhibitor research | [Map Your Show exhibitor research](skills/apify-cleanscrape-exhibitor-research/SKILL.md) | Sourced shortlists and careful interpretation of directory changes |
+| Shopify product-review research | [Shopify product-review research](skills/apify-cleanscrape-shopify-reviews/SKILL.md) | Judge.me and Okendo feedback with product-group attribution |
+| Google News and publisher-feed research | [Google News and publisher-feed research](skills/apify-cleanscrape-news-research/SKILL.md) | A sourced brief with link status and coverage notes |
+| Pinterest content and destination research | [Pinterest content and destination research](skills/apify-cleanscrape-pinterest-research/SKILL.md) | Content themes and destination-domain tables |
+| Google Hotels stay and offer comparison | [Google Hotels stay and offer comparison](skills/apify-cleanscrape-hotel-comparison/SKILL.md) | Same-stay hotel and provider-offer comparisons |
+| TikTok Shop product comparison | [TikTok Shop product comparison](skills/apify-cleanscrape-tiktok-shop/SKILL.md) | US product and variant comparisons with source caveats |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
 
@@ -22,6 +30,7 @@ Use an assistant that supports the [Agent Skills format](https://agentskills.io/
 ```bash
 npx skills add CleanScrape/agent-skills --skill apify-cleanscrape-app-reviews
 npx skills add CleanScrape/agent-skills --skill apify-cleanscrape-google-trends
+npx skills add CleanScrape/agent-skills --list
 ```
 
 Review the skill before installing. Each skill is self-contained in its own folder; there are no bundled executables, install hooks or third-party dependencies. The optional installer has its own software requirements and telemetry policy. You can instead download the folder and use your assistant's documented local-skill installation method.
@@ -93,15 +102,14 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Google Hotels](https://apify.com/cleanscrape/google-hotels-scraper) | Destination and stay details |
 | [TikTok Shop products](https://apify.com/cleanscrape/tiktok-shop-product-scraper) | US-market product searches or supported product links |
 
-Only Reviews and Trends have skills in this first release. Each Store page documents the current inputs, coverage, examples and pricing.
+Each tool now has a focused skill in this repository. The table at the top links to the individual instructions. Each Store page documents the current inputs, coverage, examples and pricing.
 
 ## Support and scope
 
 For skill instructions, [open a GitHub issue](https://github.com/CleanScrape/agent-skills/issues). For an Actor run, use that Actor's Issues tab or email [contact.cleanscrape@gmail.com](mailto:contact.cleanscrape@gmail.com). Include the expected result and a non-sensitive example, never a token.
 
-The first release was prepared against the published Reviews 0.3.19 and Trends 0.3.12 input schemas and documentation. No new paid run or end-to-end agent execution was performed for this release. Source availability and assistant behaviour can vary.
+The skills were prepared against published Actor schemas and documentation. Local format, example-input and installation checks and export-only walkthroughs are documented in [Validation](VALIDATION.md). No fresh cloud scrape is part of this skills release. Local checks do not establish live source availability or identical behaviour across every assistant.
 
 **Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify and the other platforms named here.
 
 [Apify](https://apify.com/cleanscrape) | [Tutorials](https://dev.to/cleanscrape) | [YouTube](https://www.youtube.com/@CleanScrapeTools)
-
