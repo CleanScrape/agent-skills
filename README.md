@@ -87,6 +87,10 @@ These are calculations, not promised output counts. Trends bills one term at one
 - A successful run is not enough: the assistant also checks the run report for partial, empty or failed sections.
 - Existing exports stay unchanged. Any cleaned tables, charts or summaries are separate analysis outputs.
 
+## Guides for tutorials and evaluations
+
+The [demo kit](guides/demo-kit/README.md) brings together a free app-review comparison, a Google Trends decision guide, example inputs and short walkthrough outlines. It explains when a free native export is enough and when a paid Actor may help.
+
 ## Watch the workflow
 
 [App-review demo](https://www.youtube.com/watch?v=WpWDcEdP3Rs) shows collection and export using Spotify as an example. [Google Trends demo](https://www.youtube.com/watch?v=GBEaKKHMJKs) compares two coffee-related terms.
