@@ -53,6 +53,10 @@ No Apify token is needed to analyse local exports. Your assistant may have its o
 
 Do not put private exports, reviewer details, API tokens or signed download links in a public repository or issue.
 
+## A local example you can run without an assistant
+
+[Compare two app-review snapshots](examples/review-snapshot/README.md) with a small Python script. It reports newly observed reviews, changed fields and ratings by store, without a token, model call or network request. A synthetic demonstration and offline tests are included. The optional script lives outside the skill folders and is not installed with a skill.
+
 ## When you need fresh data
 
 The assistant should show the proposed inputs, current pricing and a spending limit before starting. It must use your own authorised Apify connection or `APIFY_TOKEN` environment variable. It must not quietly run extra Actors, increase the budget or create recurring jobs.
