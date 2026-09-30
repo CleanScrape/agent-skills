@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Eight focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Nine focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -20,6 +20,7 @@ Eight focused skills, one for each CleanScrape Actor. Use the one that fits the 
 | Pinterest content and destination research | [Pinterest content and destination research](skills/apify-cleanscrape-pinterest-research/SKILL.md) | Content themes and destination-domain tables |
 | Google Hotels stay and offer comparison | [Google Hotels stay and offer comparison](skills/apify-cleanscrape-hotel-comparison/SKILL.md) | Same-stay hotel and provider-offer comparisons |
 | TikTok Shop product comparison | [TikTok Shop product comparison](skills/apify-cleanscrape-tiktok-shop/SKILL.md) | US product and variant comparisons with source caveats |
+| Threads post and account research | [Threads post research](skills/apify-cleanscrape-threads-research/SKILL.md) | Editorial shortlists and engagement tables with source links and history coverage |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
 
@@ -109,6 +110,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Pinterest](https://apify.com/cleanscrape/pinterest-scraper) | Supported search or pin inputs |
 | [Google Hotels](https://apify.com/cleanscrape/google-hotels-scraper) | Destination and stay details |
 | [TikTok Shop products](https://apify.com/cleanscrape/tiktok-shop-product-scraper) | US-market product searches or supported product links |
+| [Threads posts](https://apify.com/cleanscrape/threads-scraper) | Account names or full post links, with a shared result limit |
 
 Each tool now has a focused skill in this repository. The table at the top links to the individual instructions. Each Store page documents the current inputs, coverage, examples and pricing.
 
