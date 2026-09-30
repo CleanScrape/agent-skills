@@ -63,3 +63,17 @@ These input-schema and documentation versions were inspected when preparing the 
 
 Before fresh collection, check the current Actor schema and Pricing tab and obtain an explicit positive spending cap. Installing a free skill does not make an Actor run free.
 
+
+
+## Threads addition (2026-10-01)
+
+The original eight-skill checks above remain historical checks of those eight skills. The new `apify-cleanscrape-threads-research` skill is a separate addition.
+
+- Its example input passed the Threads Actor normalizer.
+- Current Agent Skills specification checks passed for frontmatter keys, YAML types, field lengths, directory/name matching and a non-empty body.
+- The bundled `quick_validate.py` rejects the `compatibility` key. The current specification explicitly permits that key; a specification-aligned check passed without modifying the installed validator. See https://agentskills.io/specification.
+- Cost approval, positive spending limits, credential handling, untrusted source text, partial results and experimental replies are covered explicitly.
+- Threads uses `SUMMARY` and `REPORT`, with `RECOVERY_POSTS` where relevant. Do not apply other Actors' report-key assumptions to it.
+- A real NASA example saved 20 unique posts with 20 settled billing events. Five blank captions were link-only posts with preserved link previews. The run stopped at its configured spending cap.
+- The public Actor and all three example pages returned HTTP 200 with the expected titles. A fresh run of the public 20-post example on build 0.1.7 saved 20 unique posts with 20 billing events, a valid CSV export and the corrected report.
+- These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
