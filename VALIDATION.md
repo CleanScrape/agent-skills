@@ -88,3 +88,14 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Likee uses `SUMMARY` and `REPORT`. Do not apply other Actors' report-key assumptions to it.
 - A real run on build 0.1.10 saved 40 comments from a video on Likee's official US account; 22 of the 40 were written in Russian (one more in Tajik, also in Cyrillic). That sample is the source of the audience-language example.
 - These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
+
+## Tennis addition (2026-10-03)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-tennis-research` skill is a separate addition.
+
+- Its example input passed the Tennis Actor normalizer (one target, maximum 500, statistics on, ATP and WTA).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (347 characters), compatibility length and a non-empty body.
+- Cost approval, positive spending limits, credential handling, untrusted source text and partial results are covered explicitly.
+- Tennis uses `SUMMARY` and `REPORT`. Do not apply other Actors' report-key assumptions to it.
+- A real run of the public Wimbledon 2025 example saved 478 singles matches, all with full statistics. Summed over the seven men's main-draw matches each, Sinner held 93 of 99 service games and faced 23 break points; Alcaraz held 118 of 133 and faced 57. That run is the source of the aggregation example.
+- These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
