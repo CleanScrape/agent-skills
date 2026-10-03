@@ -77,3 +77,14 @@ The original eight-skill checks above remain historical checks of those eight sk
 - A real NASA example saved 20 unique posts with 20 settled billing events. Five blank captions were link-only posts with preserved link previews. The run stopped at its configured spending cap.
 - The public Actor and all three example pages returned HTTP 200 with the expected titles. A fresh run of the public 20-post example on build 0.1.7 saved 20 unique posts with 20 billing events, a valid CSV export and the corrected report.
 - These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
+
+## Likee addition (2026-10-03)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-likee-research` skill is a separate addition.
+
+- Its example input passed the Likee Actor normalizer (`videos`, maximum 10).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (380 characters), compatibility length and a non-empty body.
+- Cost approval, positive spending limits, credential handling, untrusted captions and comments, commenter names and partial results are covered explicitly.
+- Likee uses `SUMMARY` and `REPORT`. Do not apply other Actors' report-key assumptions to it.
+- A real run on build 0.1.10 saved 40 comments from a video on Likee's official US account; 22 of the 40 were written in Russian (one more in Tajik, also in Cyrillic). That sample is the source of the audience-language example.
+- These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
