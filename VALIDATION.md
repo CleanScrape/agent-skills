@@ -108,5 +108,6 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (428 characters), compatibility length and a non-empty body.
 - Cost approval, positive spending limits, credential handling, untrusted titles, comments and danmaku, personal data in comment and danmaku rows, and partial results are covered explicitly.
 - Bilibili uses `SUMMARY` and `REPORT`. Do not apply other Actors' report-key assumptions to it.
-- The field names and summary keys were checked against the Actor source (build 0.1.11). Fresh runs of the public examples on Oct 5 2026 saved 100 videos for 咖啡, 1,800 danmaku from one video, and a creator profile with 100 videos.
+- The field names, summary keys and dataset layout were checked against the Actor source and a cloud run on build 0.1.14, where videos, comments, danmaku and creators are separate datasets listed under `storageIds.datasets`. Fresh runs of the public examples on Oct 5 2026 saved 100 videos for 咖啡, 1,800 danmaku from one video, and a creator profile with 100 videos.
+- Without login Bilibili leaves the comment author's region empty, so the skill tells assistants not to infer locations.
 - These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
