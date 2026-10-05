@@ -99,3 +99,14 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Tennis uses `SUMMARY` and `REPORT`. Do not apply other Actors' report-key assumptions to it.
 - A real run of the public Wimbledon 2025 example saved 478 singles matches, all with full statistics. Summed over the seven men's main-draw matches each, Sinner held 93 of 99 service games and faced 23 break points; Alcaraz held 118 of 133 and faced 57. That run is the source of the aggregation example.
 - These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
+
+## Bilibili addition (2026-10-05)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-bilibili-research` skill is a separate addition.
+
+- Its example input passed the Bilibili Actor normalizer (one search term, 50 videos, danmaku on with a cap of 300, tags on by default).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (428 characters), compatibility length and a non-empty body.
+- Cost approval, positive spending limits, credential handling, untrusted titles, comments and danmaku, personal data in comment and danmaku rows, and partial results are covered explicitly.
+- Bilibili uses `SUMMARY` and `REPORT`. Do not apply other Actors' report-key assumptions to it.
+- The field names and summary keys were checked against the Actor source (build 0.1.11). Fresh runs of the public examples on Oct 5 2026 saved 100 videos for 咖啡, 1,800 danmaku from one video, and a creator profile with 100 videos.
+- These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.

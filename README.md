@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Eleven focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Twelve focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -23,6 +23,7 @@ Eleven focused skills, one for each CleanScrape Actor. Use the one that fits the
 | Threads post and account research | [Threads post research](skills/apify-cleanscrape-threads-research/SKILL.md) | Editorial shortlists and engagement tables with source links and history coverage |
 | Likee creator and comment research | [Likee creator and comment research](skills/apify-cleanscrape-likee-research/SKILL.md) | Recent-post tables and comment-language checks with count precision and coverage notes |
 | Tennis match and statistics research | [Tennis match and statistics research](skills/apify-cleanscrape-tennis-research/SKILL.md) | Results and statistics tables with counts, point-by-point, form and head-to-head, with coverage notes |
+| Bilibili video, danmaku and comment research | [Bilibili video, danmaku and comment research](skills/apify-cleanscrape-bilibili-research/SKILL.md) | Chinese-market video engagement tables, danmaku timelines and top-comment themes, with sample and coverage notes |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
 
@@ -115,6 +116,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Threads posts](https://apify.com/cleanscrape/threads-scraper) | Account names or full post links, with a shared result limit |
 | [Likee videos and comments](https://apify.com/cleanscrape/likee-scraper) | Creator handles or video Share links, with a shared result limit |
 | [Tennis matches and statistics](https://apify.com/cleanscrape/tennis-match-data) | Tournament or player names, Flashscore links, or days |
+| [Bilibili videos, danmaku and comments](https://apify.com/cleanscrape/bilibili-scraper) | Search terms, video links or creator links, no login |
 
 Each tool now has a focused skill in this repository. The table at the top links to the individual instructions. Each Store page documents the current inputs, coverage, examples and pricing.
 
@@ -124,6 +126,6 @@ For skill instructions, [open a GitHub issue](https://github.com/CleanScrape/age
 
 The skills were prepared against published Actor schemas and documentation. Local format, example-input and installation checks and export-only walkthroughs are documented in [Validation](VALIDATION.md). No fresh cloud scrape is part of this skills release. Local checks do not establish live source availability or identical behaviour across every assistant.
 
-**Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify, Likee, Flashscore and the other platforms named here.
+**Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify, Likee, Flashscore, Bilibili and the other platforms named here.
 
 [Apify](https://apify.com/cleanscrape) | [Tutorials](https://dev.to/cleanscrape) | [YouTube](https://www.youtube.com/@CleanScrapeTools)
