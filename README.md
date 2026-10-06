@@ -24,6 +24,7 @@ Twelve focused skills, one for each CleanScrape Actor. Use the one that fits the
 | Likee creator and comment research | [Likee creator and comment research](skills/apify-cleanscrape-likee-research/SKILL.md) | Recent-post tables and comment-language checks with count precision and coverage notes |
 | Tennis match and statistics research | [Tennis match and statistics research](skills/apify-cleanscrape-tennis-research/SKILL.md) | Results and statistics tables with counts, point-by-point, form and head-to-head, with coverage notes |
 | Bilibili video, danmaku and comment research | [Bilibili video, danmaku and comment research](skills/apify-cleanscrape-bilibili-research/SKILL.md) | Chinese-market video engagement tables, danmaku timelines and top-comment themes, with sample and coverage notes |
+| Google Jobs listing and salary research | [Google Jobs listing and salary research](skills/apify-cleanscrape-google-jobs-research/SKILL.md) | Salary comparisons across cities, hiring-market scans and new-job monitoring, with salary sample sizes and coverage notes |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
 
@@ -117,6 +118,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Likee videos and comments](https://apify.com/cleanscrape/likee-scraper) | Creator handles or video Share links, with a shared result limit |
 | [Tennis matches and statistics](https://apify.com/cleanscrape/tennis-match-data) | Tournament or player names, Flashscore links, or days |
 | [Bilibili videos, danmaku and comments](https://apify.com/cleanscrape/bilibili-scraper) | Search terms, video links or creator links, no login |
+| [Google Jobs listings and salaries](https://apify.com/cleanscrape/google-jobs-scraper) | Job titles and locations in 36 countries |
 
 Each tool now has a focused skill in this repository. The table at the top links to the individual instructions. Each Store page documents the current inputs, coverage, examples and pricing.
 

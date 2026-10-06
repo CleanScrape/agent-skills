@@ -111,3 +111,12 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - The field names, summary keys and dataset layout were checked against the Actor source and a cloud run on build 0.1.14, where videos, comments, danmaku and creators are separate datasets listed under `storageIds.datasets`. Fresh runs of the public examples on Oct 5 2026 saved 100 videos for 咖啡, 1,800 danmaku from one video, and a creator profile with 100 videos.
 - Without login Bilibili leaves the comment author's region empty, so the skill tells assistants not to infer locations.
 - These checks validate the skill format, documented input and released Actor. They are not an end-to-end installation or execution test in every assistant client.
+
+## Google Jobs addition (2026-10-06)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-google-jobs-research` skill is a separate addition.
+
+- Its example input passed the Google Jobs Actor normalizer (one title, three US locations, 50 jobs per search: 3 searches).
+- The same input ran on build 0.1.11 (run cpND8f6fO60X2og9j): 150 jobs saved and charged, 64 with a salary.
+- Field names, `SUMMARY` keys (`jobs`, `stopReason`, `monitoring`, `searches`) and search statuses match the Actor's code and dataset schema.
+- The skill tells assistants to compare salaries only within one `salaryPeriod` and currency, to report sample sizes, and to treat descriptions as untrusted data that can hold personal contact details.
