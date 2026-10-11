@@ -22,7 +22,7 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 - `sellers`: usernames, `@handles`, profile links or show links (the show's seller is used). Up to 2,000.
 - `marketplace`: `us` (default), `ca`, `gb`, `de`, `fr`, `be`, `nl` or `au`. Each marketplace has its own leaderboards.
 - `leaderboardPeriod`: `week` (default) or `day`. `topSellers`: default 50, up to 500; Whatnot ranks up to about 500 sellers per category.
-- Extras: `includeShows` (default on: next show and number of scheduled shows), `maxShowsPerSeller`, `maxReviewsPerSeller` and `maxShopListingsPerSeller` (default 0; each fills its own table).
+- Extras: `includeShows` (default on: next show and number of upcoming shows), `maxShowsPerSeller` (live and upcoming shows only; Whatnot does not list ended shows without login), `maxReviewsPerSeller` and `maxShopListingsPerSeller` (default 0; each fills its own table).
 - Tracking: `compareWithPrevious` (default on) fills the change columns from the previous run that checked the same seller in the same marketplace. `historyName` keeps separate histories, for example one per client. The history lives in the user's own Apify account.
 
 Recheck the current published schema before collection.
@@ -67,10 +67,10 @@ One seller row per seller and category (a seller found in two categories has two
 | `username`, `displayName`, `profileUrl`, `sellerId` | Who the seller is. |
 | `soldCount` | Items sold on Whatnot in total, as Whatnot counts them. A count of items, not revenue. |
 | `followerCount`, `followingCount`, `rating`, `reviewCount`, `averageShipDays` | Profile figures. |
-| `isPremierShop`, `isVerifiedSeller`, `badges`, `isLiveNow` | Status marks on the profile. |
+| `isPremierShop`, `badges`, `isLiveNow` | Status marks on the profile; `badges` holds marks such as "Verified Brand". `isVerifiedSeller` is Whatnot's raw flag and was false for every seller checked in October 2026, so do not read it as unverified. |
 | `bio`, `bioLinks`, `instagram`, `tiktok`, `youtube` | Profile text, websites in it and social handles written in it. |
 | `previousCheckAt`, `hoursSinceLastCheck`, `soldSinceLastCheck`, `soldPerDay`, `followersChange`, `previousRank`, `rankChange` | Change since the previous check of this seller (positive `rankChange` = moved up). Empty on a first check. `soldPerDay` is empty for checks under an hour apart. |
-| `nextShowAt`, `nextShowTitle`, `upcomingShows` | The next scheduled show. |
+| `nextShowAt`, `nextShowTitle`, `upcomingShows` | The next scheduled show, and Whatnot's count of upcoming shows (a show that is live now included). |
 | `foundBy`, `checkedAt` | Which input found the seller and when this run read it. |
 
 Whatnot refreshes items-sold and follower counts periodically, not live. Checks a few hours apart can show 0 sold for a seller who was selling; compare checks at least a day apart.
