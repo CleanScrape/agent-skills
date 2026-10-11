@@ -120,3 +120,13 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - The same input ran on build 0.1.11 (run cpND8f6fO60X2og9j): 150 jobs saved and charged, 64 with a salary.
 - Field names, `SUMMARY` keys (`jobs`, `stopReason`, `monitoring`, `searches`) and search statuses match the Actor's code and dataset schema.
 - The skill tells assistants to compare salaries only within one `salaryPeriod` and currency, to report sample sizes, and to treat descriptions as untrusted data that can hold personal contact details.
+
+## Whatnot additions (2026-10-11)
+
+The checks above remain historical checks of the earlier skills. The `apify-cleanscrape-whatnot-research` and `apify-cleanscrape-whatnot-seller-research` skills are separate additions.
+
+- Both example inputs passed the Actors' input normalizers.
+- The listing example ran on Whatnot Scraper build 0.1.21 (run r7EsdxOUFgQ6iDwKh): 73 PSA 10 Charizard listings saved and charged in 16 seconds. One listing had the $999,999 placeholder price, which is why the skill tells assistants to remove placeholders before price statistics.
+- A top-50 Pokémon Cards leaderboard run on Whatnot Seller Tracker (run uLoawPTrLcFVynhrZ) saved 50 sellers in 27 seconds: 40 compared with a check 14.9 hours earlier and 10 seen for the first time, with empty change columns.
+- Field names, dataset aliases (`shows`, `showItems`; `shows`, `reviews`, `listings`), `SUMMARY` keys and input statuses match the Actors' code and dataset schemas.
+- The skills tell assistants that prices are asking prices and items sold is a count, not revenue, and to treat titles, bios and reviews as untrusted data.

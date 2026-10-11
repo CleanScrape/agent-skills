@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Twelve focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Fifteen focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -25,6 +25,8 @@ Twelve focused skills, one for each CleanScrape Actor. Use the one that fits the
 | Tennis match and statistics research | [Tennis match and statistics research](skills/apify-cleanscrape-tennis-research/SKILL.md) | Results and statistics tables with counts, point-by-point, form and head-to-head, with coverage notes |
 | Bilibili video, danmaku and comment research | [Bilibili video, danmaku and comment research](skills/apify-cleanscrape-bilibili-research/SKILL.md) | Chinese-market video engagement tables, danmaku timelines and top-comment themes, with sample and coverage notes |
 | Google Jobs listing and salary research | [Google Jobs listing and salary research](skills/apify-cleanscrape-google-jobs-research/SKILL.md) | Salary comparisons across cities, hiring-market scans and new-job monitoring, with salary sample sizes and coverage notes |
+| Whatnot listing and live-show research | [Whatnot listing and live-show research](skills/apify-cleanscrape-whatnot-research/SKILL.md) | Asking-price checks for cards and collectibles, seller comparisons and live-show scans, with placeholder prices and coverage noted |
+| Whatnot seller and leaderboard research | [Whatnot seller and leaderboard research](skills/apify-cleanscrape-whatnot-seller-research/SKILL.md) | Top-seller lists, items sold between checks, follower growth and rank changes, with change windows and first checks noted |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
 
@@ -119,6 +121,8 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Tennis matches and statistics](https://apify.com/cleanscrape/tennis-match-data) | Tournament or player names, Flashscore links, or days |
 | [Bilibili videos, danmaku and comments](https://apify.com/cleanscrape/bilibili-scraper) | Search terms, video links or creator links, no login |
 | [Google Jobs listings and salaries](https://apify.com/cleanscrape/google-jobs-scraper) | Job titles and locations in 36 countries |
+| [Whatnot listings and live shows](https://apify.com/cleanscrape/whatnot-scraper) | Keywords, categories or Whatnot links, with card filters, in 8 marketplaces |
+| [Whatnot seller tracker](https://apify.com/cleanscrape/whatnot-seller-tracker) | Category leaderboards or seller names, compared with your previous run |
 
 Each tool now has a focused skill in this repository. The table at the top links to the individual instructions. Each Store page documents the current inputs, coverage, examples and pricing.
 
@@ -128,6 +132,6 @@ For skill instructions, [open a GitHub issue](https://github.com/CleanScrape/age
 
 The skills were prepared against published Actor schemas and documentation. Local format, example-input and installation checks and export-only walkthroughs are documented in [Validation](VALIDATION.md). No fresh cloud scrape is part of this skills release. Local checks do not establish live source availability or identical behaviour across every assistant.
 
-**Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify, Likee, Flashscore, Bilibili and the other platforms named here.
+**Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify, Likee, Flashscore, Bilibili, Whatnot and the other platforms named here.
 
 [Apify](https://apify.com/cleanscrape) | [Tutorials](https://dev.to/cleanscrape) | [YouTube](https://www.youtube.com/@CleanScrapeTools)
