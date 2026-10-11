@@ -26,9 +26,9 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 - `maxResultsPerSearch`: default 100, up to 2,000.
 - Listing filters: `sort` (`best`, `newest`, `price_asc`, `price_desc`), `buyFormat` (`any`, `buy_it_now`, `auction`), `minPrice`, `maxPrice`, `gradedOnly`, `gradingServices` (PSA, CGC, BECKETT, SGC), `grades`, `languages`, `sets`, `conditions`, `productTypes`, `minSellerRating` (`any`, `4.0`, `4.5`, `5.0`), `premierShopOnly`, `shippedFrom`.
 - Show options: `showStatus` (`both`, `live`, `upcoming`), `showFormats` (such as Singles, Breaks, Surprise Sets), `showSort` (`recommended`, `viewers`), `maxItemsPerShow` (default 0; items for sale in each show go to their own table).
-- Monitoring: `onlyNew` returns only listings or shows that earlier runs with the same searches (or the same `watchName`) did not save, plus price drops when `includePriceDrops` is on. Skipped rows are not charged.
+- Monitoring: `onlyNew` looks at the first `maxResultsPerSearch` results of each search and returns those that earlier runs with the same searches (or the same `watchName`) did not save, plus price drops when `includePriceDrops` is on. Skipped rows are not charged. For alerts on new listings, use `sort: "newest"`.
 
-With `price_desc`, the first rows are often $999,999 placeholder listings; set `maxPrice`. Recheck the current published schema before collection.
+Outside the US, a sorted listing search (`newest` or a price sort) keeps to sellers in that marketplace's country unless `shippedFrom` is set, because Whatnot otherwise mixes in every country. With `price_desc`, the first rows are often $999,999 placeholder listings; set `maxPrice`. Recheck the current published schema before collection.
 
 ```json
 {
