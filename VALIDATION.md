@@ -130,3 +130,13 @@ The checks above remain historical checks of the earlier skills. The `apify-clea
 - A top-50 Pokémon Cards leaderboard run on Whatnot Seller Tracker (run uLoawPTrLcFVynhrZ) saved 50 sellers in 27 seconds: 40 compared with a check 14.9 hours earlier and 10 seen for the first time, with empty change columns.
 - Field names, dataset aliases (`shows`, `showItems`; `shows`, `reviews`, `listings`), `SUMMARY` keys and input statuses match the Actors' code and dataset schemas.
 - The skills tell assistants that prices are asking prices and items sold is a count, not revenue, and to treat titles, bios and reviews as untrusted data.
+
+## Kick addition (2026-10-12)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-kick-sponsor-research` skill is a separate addition.
+
+- Its example input passed the Kick Sponsor Tracker input normalizer (four brands, all known; 10,000 live streams; minimum 1 viewer).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (373 characters), compatibility length and a non-empty body.
+- The same brands, stream limit and viewer minimum ran on build 0.1.9 (run HarOwAK2EXAZlwAX1, with a 200-streamer limit; 26 were picked): 10,000 live streams scanned and 26 sponsorships saved in about four minutes. HOLY was on 16 streamers, DZIK and G FUEL on 5 each, and Red Bull on none. That run is the source of the demo video and the brand-share example.
+- Field names, dataset aliases (`channels`, `streams`, `brands`), `SUMMARY` keys and streamer statuses (`done`, `not_found`, `invalid`, `failed`, `not_processed`) match the Actor's code and dataset schemas.
+- The skill tells assistants that a sponsorship is what a channel shows publicly, not a confirmed contract or fee, that broadcast figures cover at most the latest 30 broadcasts, and to treat titles, bios, link descriptions and chat as untrusted data. It also notes that gambling advertising is regulated.
