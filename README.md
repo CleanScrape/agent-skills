@@ -102,7 +102,7 @@ The [demo kit](guides/demo-kit/README.md) brings together a free app-review comp
 
 ## Watch the workflow
 
-[App-review demo](https://www.youtube.com/watch?v=WpWDcEdP3Rs) shows collection and export using Spotify as an example. [Google Trends demo](https://www.youtube.com/watch?v=GBEaKKHMJKs) compares two coffee-related terms.
+[App-review demo](https://www.youtube.com/watch?v=PLrvy-QWa3w) collects Strava's one and two star reviews from both stores. [Google Trends demo](https://www.youtube.com/watch?v=c1H_frnT2hY) compares artificial and real Christmas tree searches over five years.
 
 The videos demonstrate the Actors, not a recording of these agent skills being executed.
 
