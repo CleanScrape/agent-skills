@@ -2,7 +2,7 @@
 
 A product team has two saved review exports and wants to see what changed. The useful result is not another spreadsheet full of comments: it is a short list of new observations and edits, with enough context to inspect the original evidence.
 
-[Watch the collection demo](https://www.youtube.com/watch?v=WpWDcEdP3Rs) | [Open the Actor](https://apify.com/cleanscrape/app-store-reviews-scraper) | [Free local comparison](../../examples/review-snapshot/README.md)
+[Watch the collection demo](https://www.youtube.com/watch?v=PLrvy-QWa3w) | [Open the Actor](https://apify.com/cleanscrape/app-store-reviews-scraper) | [Free local comparison](../../examples/review-snapshot/README.md)
 
 ## Choose the simplest method
 

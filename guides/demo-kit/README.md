@@ -15,8 +15,8 @@ The Reviews guide includes a runnable local example with synthetic data. The Tre
 
 ## Existing demonstrations
 
-- [App Store and Google Play reviews video](https://www.youtube.com/watch?v=WpWDcEdP3Rs): Spotify is the example, not a restriction to that app.
-- [Google Trends video](https://www.youtube.com/watch?v=GBEaKKHMJKs): a two-term coffee comparison, with the meaning of the index explained.
+- [App Store and Google Play reviews video](https://www.youtube.com/watch?v=PLrvy-QWa3w): Strava's one and two star reviews from both stores. Strava is the example, not a restriction to that app.
+- [Google Trends video](https://www.youtube.com/watch?v=c1H_frnT2hY): artificial and real Christmas tree searches over five years, with the meaning of the index explained.
 - [All CleanScrape tutorials](https://dev.to/cleanscrape).
 
 These videos demonstrate the Actors. They are not recordings of the local snapshot script or evidence that every assistant executes a skill identically. Link to the original videos; contact us before reusing the media files. This repository's MIT licence does not grant rights to third-party data, logos, narration or video assets.

@@ -2,7 +2,7 @@
 
 Suppose you are considering a guide about iced coffee or cold brew. You want to see how interest in the two terms changes over the year before choosing the timing and angle.
 
-[Watch the example](https://www.youtube.com/watch?v=GBEaKKHMJKs) | [Open Google Trends Scraper API](https://apify.com/cleanscrape/google-trends-scraper) | [Use the research skill](../../skills/apify-cleanscrape-google-trends/SKILL.md)
+[Watch a two-term comparison](https://www.youtube.com/watch?v=c1H_frnT2hY) | [Open Google Trends Scraper API](https://apify.com/cleanscrape/google-trends-scraper) | [Use the research skill](../../skills/apify-cleanscrape-google-trends/SKILL.md)
 
 ## Do you need a scraper?
 
