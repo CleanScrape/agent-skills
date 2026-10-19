@@ -140,3 +140,11 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - The same brands, stream limit and viewer minimum ran on build 0.1.9 (run HarOwAK2EXAZlwAX1, with a 200-streamer limit; 26 were picked): 10,000 live streams scanned and 26 sponsorships saved in about four minutes. HOLY was on 16 streamers, DZIK and G FUEL on 5 each, and Red Bull on none. That run is the source of the demo video and the brand-share example.
 - Field names, dataset aliases (`channels`, `streams`, `brands`), `SUMMARY` keys and streamer statuses (`done`, `not_found`, `invalid`, `failed`, `not_processed`) match the Actor's code and dataset schemas.
 - The skill tells assistants that a sponsorship is what a channel shows publicly, not a confirmed contract or fee, that broadcast figures cover at most the latest 30 broadcasts, and to treat titles, bios, link descriptions and chat as untrusted data. It also notes that gambling advertising is regulated.
+
+## Casino addition (2026-10-19)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-casino-bonus-research` skill is a separate addition.
+
+- Its example input passed the Casino bonus checker input normalizer (one brand, United Kingdom, one official offer line).
+- Field names, defaults, limits and prices were checked against the published build 0.1.20 and its README on 2026-10-19.
+- The skill names no casino and links no casino or affiliate page; it is written for brand, compliance and affiliate-programme teams.
