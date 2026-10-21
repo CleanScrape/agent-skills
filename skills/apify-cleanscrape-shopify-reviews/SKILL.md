@@ -18,15 +18,15 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 
 ## Start with the user's task
 
-Supply one to twenty individual Shopify product-page URLs. The example demonstrates the input shape, not a guarantee of current storefront coverage. Supported public integrations are Judge.me and Okendo only. Do not claim support from a provider logo alone.
+Supply one to twenty Shopify product, collection or store URLs. Store and collection links discover product pages automatically, up to the documented 500-product source limit. The example demonstrates the input shape, not a guarantee of current storefront coverage. Supported public integrations are Judge.me and Okendo only. Do not claim support from a provider logo alone.
 
-Homepages, whole-store discovery and Shopify App Store listings are outside scope. Loox, Yotpo, Stamped and other unlisted providers are not supported. Do not silently change the provider or use merchant credentials.
+Shopify App Store listings are outside scope. Store discovery does not promise every review or bypass unavailable product pages. Loox, Yotpo, Stamped and other unlisted providers are not supported. Do not silently change the provider or use merchant credentials.
 
 `maxReviewsPerProduct` is how many reviews to inspect before rating filtering; `maxTotalReviews` caps total exported matches. The rating selector uses strings such as `"1"` and `"2"`, not numbers. Keep all five ratings for an unfiltered comparison. A low-star-only collection cannot estimate the overall low-star share.
 
 ## Small input example
 
-Based on published build 0.4.10, inspected on 2026-09-29. Recheck the current schema before a live request.
+Checked against published build 0.4.38 on 2026-10-21. Recheck the current schema before a live request.
 
 ```json
 {
