@@ -30,7 +30,7 @@ maxResults caps hotels across all inputs. Discovery covers at most twenty first-
 
 ## Small input example
 
-Based on published build 0.1.16, inspected on 2026-09-29. Recheck the current schema before a live request.
+Based on published build 0.1.39, checked on 2026-10-21. Recheck the current schema before a live request.
 
 ```json
 {
