@@ -28,7 +28,7 @@ In monitor mode, `maxExhibitorsPerEvent` must fit the whole directory, not only 
 
 ## Small input example
 
-Based on published build 0.2.10, inspected on 2026-09-29. Recheck the current schema before a live request.
+Based on published build 0.3.28, checked on 2026-10-21. Recheck the current schema before a live request.
 
 ```json
 {
