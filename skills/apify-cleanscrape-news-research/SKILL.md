@@ -30,7 +30,7 @@ Keep `newOnly` false unless the user requests saved delivery history. Enabling i
 
 ## Small input example
 
-Based on published build 0.2.16, inspected on 2026-09-29. Recheck the current schema before a live request.
+Based on published build 0.2.43, checked on 2026-10-21. Recheck the current schema before a live request.
 
 ```json
 {
