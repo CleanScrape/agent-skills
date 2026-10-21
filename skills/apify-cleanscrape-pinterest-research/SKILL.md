@@ -18,7 +18,7 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 
 ## Start with the user's task
 
-Use searchTerms, supported public Pinterest URLs, or both, up to 25 combined inputs. For URLs only, clear the prefilled search term. Supported URLs include pins, public boards and profile homepages; public pin.it links resolve where possible. Private boards, board sections and exhaustive profile archives are outside scope.
+Use searchTerms, supported public Pinterest URLs, or both, up to 25 combined inputs. Remove any unused example source when switching between links and search. Supported URLs include pins, public boards and profile homepages; public pin.it links resolve where possible. Private boards, board sections and exhaustive profile archives are outside scope.
 
 searchMatching applies only to keyword searches: pinterest uses source relevance, allWords/exactPhrase check available title/description/alt text and can miss synonyms. includeAny/excludeAny apply the optional text filters. Different filters can reduce the output below maxPins.
 
@@ -28,7 +28,7 @@ maxPins is a run-wide unique-output cap. maxPinsToScan separately bounds examine
 
 ## Small input example
 
-Based on published build 0.1.10, inspected on 2026-09-29. Recheck the current schema before a live request.
+Checked against published build 0.1.38 on 2026-10-21. Recheck the current schema before a live request.
 
 ```json
 {
@@ -67,7 +67,7 @@ Check the current [Actor Pricing tab](https://apify.com/cleanscrape/pinterest-sc
 
 | Fields | Use |
 | --- | --- |
-| `pinId`, `pinUrl` | String pin identity and source link |
+| `pinId`, `pinUrl` | String identity and available pin link. Logged-out search may return an encrypted `e1_...` ID and no `pinUrl`; preserve the missing link and never invent a permalink. |
 | `title`, `displayTitle`, `description`, `altText` | Source text and a readable label derived from available source text |
 | `outboundUrl`, `outboundDomain` | External destination if supplied |
 | `imageUrl`, `thumbnailUrl`, `videoUrl`, `videoDurationSeconds` | Media references, not downloaded assets or usage rights |
