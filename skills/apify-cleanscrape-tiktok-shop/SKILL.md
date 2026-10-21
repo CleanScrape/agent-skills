@@ -30,7 +30,7 @@ The optional review preview is a source-selected subset, not full history or a r
 
 ## Small input example
 
-Based on published build 0.1.16, inspected on 2026-09-29. Recheck the current schema before a live request.
+Based on published build 0.1.47, checked on 2026-10-21. Recheck the current schema before a live request.
 
 ```json
 {
