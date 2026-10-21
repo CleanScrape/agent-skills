@@ -20,8 +20,8 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 
 - `queries`: job titles or keywords, one per entry, such as `registered nurse`. A pasted Google Jobs or Google search link is also accepted; its query is used as typed.
 - `locations`: optional cities, regions or `remote`. Every query is searched in every location (up to 200 searches per run). Leave empty to search the whole country.
-- `country`: one of 36 supported countries (default `us`). Google Jobs is not offered in Australia, New Zealand, Ireland, the Netherlands, Belgium, the Nordics except Denmark, Poland, Czechia, Romania, Hungary, Türkiye, Israel or South Korea. A location that names a supported country (`Berlin, Germany`) is searched in that country.
-- `maxJobsPerSearch`: default 50, up to 300. Google shows 10 jobs per search; the Actor runs close variations of each search and stops when they stop finding new jobs. Broad searches in big cities usually reach 100 to 200.
+- `country`: one of 36 supported countries (default `us`). This Actor does not currently support Australia, New Zealand, Ireland, the Netherlands, Belgium, the Nordics except Denmark, Poland, Czechia, Romania, Hungary, Türkiye, Israel or South Korea. A location that names a supported country (`Berlin, Germany`) is searched in that country.
+- `maxJobsPerSearch`: default 50, up to 300. Google shows 10 jobs per search; the Actor runs close variations of each search and stops when they stop finding new jobs. The maximum is not a promised result count. Overlapping searches, rare titles and monitoring can stop earlier when pages stop adding new jobs; read the run report. Each job is saved once per run, so overlapping titles or nearby cities end sooner: plan fewer, more distinct searches.
 - Filters: `postedWithin` (`any`, `today`, `3days`, `week`, `month`) and `employmentType` (`any`, `fulltime`, `parttime`, `contractor`, `internship`). `includeDescription` (default on) can be turned off for smaller exports.
 - Monitoring: `onlyNewJobs` returns only jobs that earlier runs with the same searches (or the same `watchName`) did not save; skipped jobs are not charged.
 
@@ -39,7 +39,7 @@ No login or account on any job site is used, and none should be requested. Do no
 
 ## Cost and permission
 
-Reference base price: $1.95 per 1,000 jobs saved. No startup event; platform usage is included. 50 jobs cost about $0.10; the 150-job example above about $0.29. Saved rows remain billable if collection later stops.
+Reference price: $2.95 per 1,000 jobs saved since October 21, 2026 (Bronze $2.655, Silver $2.5075, Gold and higher $2.36). At the base price, 50 saved jobs cost about $0.15 and 150 about $0.44. No startup event; platform usage is included. Check current Pricing before starting a paid run. Saved rows remain billable if collection later stops.
 
 Check the current [Pricing tab](https://apify.com/cleanscrape/google-jobs-scraper). Do not treat skill installation, a saved API token or an account's free allowance as permission to spend.
 
