@@ -26,7 +26,7 @@ Determine the terms, geography, time range and desired result type. Ask only for
 
 ## A focused input
 
-Example based on published build 0.3.12:
+Example based on published build 0.3.39 (checked 2026-10-21):
 
 ```json
 {
@@ -53,7 +53,7 @@ Country for keyword research and country for the trending feed are separate inpu
 
 Before spending, inspect current pricing and the published input schema. Public metadata: `GET https://api.apify.com/v2/acts/cleanscrape~google-trends-scraper`. Use its `taggedBuilds.latest.buildId` with `GET /v2/actor-builds/{buildId}` to read `inputSchema` and `readme`.
 
-Base rates checked on 2026-09-29: $0.003 per delivered row, plus $0.05 per allocated GB at startup, minimum one startup event. A timeline row is one keyword at one timestamp. At 1 GB, two terms with 52 intervals each would cost $0.362 before discounts. Google chooses intervals; 104 rows is an illustration, not a promise. Other selected sections add charges, and startup can be charged with no results.
+Base rates checked on 2026-10-21: $0.003 per delivered row, plus $0.05 per allocated GB at startup, minimum one startup event. A timeline row is one keyword at one timestamp. At 1 GB, two terms with 52 intervals each would cost $0.362 before discounts. Google chooses intervals; 104 rows is an illustration, not a promise. Other selected sections add charges, and startup can be charged with no results.
 
 1. Present the proposed input and cost basis, then obtain an authorised positive spending cap. If the budget is zero, use existing data or stop before collection. Installation and credentials are not spending permission.
 2. Use an authorised Apify tool that supports the needed controls, or the user's approved HTTPS client. Read only the supplied `APIFY_TOKEN` environment variable or approved connection. Send it in the `Authorization: Bearer` header to `https://api.apify.com`, never in URLs, logs or Actor input.
