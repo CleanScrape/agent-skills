@@ -157,3 +157,13 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (381 characters), compatibility length and a non-empty body.
 - Field names, `SUMMARY` keys, stop reasons, prices and the four example links were checked against the published build 0.1.8 on 2026-10-23. The same input ran on the published Actor's example task (4 entries: two players in two lists, edition 2026-10-19).
 - The skill tells assistants that race points and ranking points are not comparable, that ties share a rank, that a null rank change means a new entry, that Russian and Belarusian players are listed under `World`, and that rankings are not predictions or betting advice.
+
+## Career page jobs and video frames additions (2026-10-24)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-career-site-jobs-research` and `apify-cleanscrape-video-frames` skills are separate additions.
+
+- Their example inputs passed the Actors' own input normalizers (three companies with a title, location and watch; one signed video link sampled every 10 seconds as WebP).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (392 and 413 characters), compatibility length and a non-empty body.
+- Field names, dataset aliases (`companies`, `closedJobs`; `videos`), `SUMMARY` keys, statuses, stop reasons, prices and the ten example links were checked against the published builds (Career Page Jobs 0.1.14, Video Frame Extractor 0.1.12) on 2026-10-24. Each linked example was run before it was published: for instance 151 US engineering jobs with pay ranges from five Greenhouse boards, and 64 WebP frames every 10 seconds from Elephants Dream.
+- The skills tell assistants that a watch's first run is a starting point, not new hiring, that a closed job may have been filled, paused or moved, that missing pay is not zero, that fewer frames than requested is normal when near-identical frames are left out, and to use only videos the user may use.
+

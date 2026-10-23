@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Eighteen focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Twenty focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -29,6 +29,8 @@ Eighteen focused skills, one for each CleanScrape Actor. Use the one that fits t
 | Whatnot listing and live-show research | [Whatnot listing and live-show research](skills/apify-cleanscrape-whatnot-research/SKILL.md) | Asking-price checks for cards and collectibles, seller comparisons and live-show scans, with placeholder prices and coverage noted |
 | Whatnot seller and leaderboard research | [Whatnot seller and leaderboard research](skills/apify-cleanscrape-whatnot-seller-research/SKILL.md) | Top-seller lists, items sold between checks, follower growth and rank changes, with change windows and first checks noted |
 | Kick sponsor and streamer research | [Kick sponsor and streamer research](skills/apify-cleanscrape-kick-sponsor-research/SKILL.md) | Which brands Kick streamers promote, brand share of streamers and broadcast hours, promo and affiliate codes, with the one-month window and evidence noted |
+| Company career-page jobs and hiring watches | [Career page jobs research](skills/apify-cleanscrape-career-site-jobs-research/SKILL.md) | Open jobs at named companies with salary ranges and remote or hybrid shares, and new and closed jobs between scheduled checks, with board coverage and first checks explicit |
+| Frames from video files | [Video frame extraction](skills/apify-cleanscrape-video-frames/SKILL.md) | Scene-change frames, thumbnails, frames every N seconds for AI vision and exact-timestamp captures, with contact sheets, times and unreadable links explained |
 | Casino affiliate page research | [Casino affiliate page research](skills/apify-cleanscrape-casino-bonus-research/SKILL.md) | What affiliate and review pages show players about a casino brand: age notices, safer-gambling links, terms next to the offer, offer versions and affiliate IDs, reported as page facts |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
@@ -128,6 +130,8 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Whatnot listings and live shows](https://apify.com/cleanscrape/whatnot-scraper) | Keywords, categories or Whatnot links, with card filters, in 8 marketplaces |
 | [Whatnot seller tracker](https://apify.com/cleanscrape/whatnot-seller-tracker) | Category leaderboards or seller names, compared with your previous run |
 | [Kick Sponsor Tracker](https://apify.com/cleanscrape/kick-sponsor-tracker) | A live scan by category and language, brand names or streamer names, no login |
+| [Career Page Jobs Scraper](https://apify.com/cleanscrape/career-site-jobs-scraper) | Careers links, company websites or names on Greenhouse, Lever, Ashby, Workable, Recruitee, Personio and Teamtailor |
+| [Video Frame Extractor](https://apify.com/cleanscrape/video-frame-extractor) | Direct video file links, including signed storage, Dropbox and Google Drive links |
 | [Casino bonus checker](https://apify.com/cleanscrape/casino-bonus-checker) | Brand names or casino websites, US, UK and Canada by default, pages read from each country, no login |
 
 Each tool now has a focused skill in this repository. The table at the top links to the individual instructions. Each Store page documents the current inputs, coverage, examples and pricing.
