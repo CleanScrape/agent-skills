@@ -148,3 +148,12 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Its example input passed the Casino bonus checker input normalizer (one brand, United Kingdom, one official offer line).
 - Field names, defaults, limits and prices were checked against the published build 0.1.20 and its README on 2026-10-19.
 - The skill names no casino and links no casino or affiliate page; it is written for brand, compliance and affiliate-programme teams.
+
+## Tennis rankings addition (2026-10-23)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-tennis-rankings-research` skill is a separate addition.
+
+- Its example input passed the ATP and WTA Tennis Rankings Scraper input normalizer (ATP ranking and race, two players).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (381 characters), compatibility length and a non-empty body.
+- Field names, `SUMMARY` keys, stop reasons, prices and the four example links were checked against the published build 0.1.8 on 2026-10-23. The same input ran on the published Actor's example task (4 entries: two players in two lists, edition 2026-10-19).
+- The skill tells assistants that race points and ranking points are not comparable, that ties share a rank, that a null rank change means a new entry, that Russian and Belarusian players are listed under `World`, and that rankings are not predictions or betting advice.
