@@ -54,7 +54,7 @@ For a zero-cost analysis, use local exports only. Do not start cloud runs, build
 5. Download `GET /v2/datasets/{defaultDatasetId}/items?format=json&offset=0&limit=1000`, paginating when necessary. Read `GET /v2/key-value-stores/{defaultKeyValueStoreId}/records/SUMMARY` and, when useful, the human-readable `REPORT`.
 6. Preserve partial results and report their limits. Do not silently raise the budget, create a schedule or retry an interrupted run.
 
-Ready-made examples to explain the form: [nurse jobs in Chicago](https://apify.com/cleanscrape/google-jobs-scraper/examples/nurse-jobs-chicago-with-salaries), [data analyst salaries in three cities](https://apify.com/cleanscrape/google-jobs-scraper/examples/compare-data-analyst-salaries) and [new warehouse jobs every day](https://apify.com/cleanscrape/google-jobs-scraper/examples/new-warehouse-jobs-every-day). This skill is guidance, not a technical spending sandbox; the real client must apply spending controls.
+Ready-made examples to explain the form: [nurse jobs in Chicago](https://apify.com/cleanscrape/google-jobs-scraper/examples/nurse-jobs-chicago-with-salaries), [data analyst salaries in three cities](https://apify.com/cleanscrape/google-jobs-scraper/examples/compare-data-analyst-salaries) and [remote software engineer jobs](https://apify.com/cleanscrape/google-jobs-scraper/examples/remote-software-engineer-jobs). This skill is guidance, not a technical spending sandbox; the real client must apply spending controls.
 
 ## Read the output correctly
 
