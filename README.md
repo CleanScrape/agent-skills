@@ -105,7 +105,7 @@ The [demo kit](guides/demo-kit/README.md) brings together a free app-review comp
 
 ## Watch the workflow
 
-[App-review demo](https://www.youtube.com/watch?v=PLrvy-QWa3w) collects Strava's one and two star reviews from both stores. [Google Trends demo](https://www.youtube.com/watch?v=c1H_frnT2hY) compares artificial and real Christmas tree searches over five years.
+[App-review demo](https://www.youtube.com/watch?v=PLrvy-QWa3w) collects Strava's one and two star reviews from both stores. [Google Trends demo](https://www.youtube.com/watch?v=c1H_frnT2hY) compares artificial and real Christmas tree searches over five years. [Career page jobs demo](https://www.youtube.com/watch?v=T7sMVYYw1ys) reads 691 engineering jobs from seven AI companies' career pages in one run, then follows 25 companies for new and closed jobs. [Video frame extraction demo](https://www.youtube.com/watch?v=Er-PwjK-e8c) finds all 166 shots of the 15-minute film Sintel and the 6 slides of a lecture recording.
 
 The videos demonstrate the Actors, not a recording of these agent skills being executed.
 
