@@ -167,3 +167,11 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Field names, dataset aliases (`companies`, `closedJobs`; `videos`), `SUMMARY` keys, statuses, stop reasons, prices and the ten example links were checked against the published builds (Career Page Jobs 0.1.14, Video Frame Extractor 0.1.12) on 2026-10-24. Each linked example was run before it was published: for instance 151 US engineering jobs with pay ranges from five Greenhouse boards, and 64 WebP frames every 10 seconds from Elephants Dream.
 - The skills tell assistants that a watch's first run is a starting point, not new hiring, that a closed job may have been filled, paused or moved, that missing pay is not zero, that fewer frames than requested is normal when near-identical frames are left out, and to use only videos the user may use.
 
+## Economic calendar addition (2026-10-27)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-economic-calendar-research` skill is a separate addition.
+
+- Its example input passed the Actor's own input normalizer (all five economies, next 7 days, high impact, with a watch name and only changes).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (433 characters), compatibility length and a non-empty body.
+- Field names, the `sources` dataset alias, `SUMMARY` keys, time-status and change values, prices and the five example links were checked against the published build (Economic Calendar 0.1.19) on 2026-10-27. Each linked example was run before it was published: for instance 34 US CPI and jobs releases from the past year, and the Fed, ECB, Bank of Canada and RBA decisions for the next 30 days.
+- The skill tells assistants to state each time's precision rather than presenting standard, provisional or date-only times as confirmed, that a watch's first run marks everything new, that first-published and current series values are different measures, that a blank value is not zero, and that there are no consensus forecasts.
