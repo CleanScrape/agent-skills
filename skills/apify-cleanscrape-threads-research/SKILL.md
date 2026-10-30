@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires local-file analysis tools. Fresh collection additionally requires an authorised Apify connection or HTTPS client and an approved positive spending limit.
 metadata:
   author: CleanScrape
-  version: "0.1.0"
+  version: "0.1.1"
   category: research
   keywords: "threads, public posts, account history, post links, engagement, editorial research"
 ---
@@ -33,7 +33,7 @@ All modes use the same `targets` list. Both `threads.com` and older `threads.net
 }
 ```
 
-`maxResults` is shared across all targets, not a per-account minimum. Its current range is 1-10,000. Start small unless the user needs a larger export. Recheck the current published schema before collection.
+`maxResults` is shared across all targets, not a per-account minimum. Its current range is 1-10,000 on paid Apify plans; on Apify's free plan a run saves up to 200 posts and says so in its status. Start small unless the user needs a larger export. Recheck the current published schema before collection.
 
 Optional `timeRange` values are `any`, `7d`, `30d` and `custom`. Custom dates use `startDate` and `endDate` in `YYYY-MM-DD` format; the final UTC day is included. Date filtering does not unlock older posts. Retained custom dates are ignored when a preset is selected.
 
