@@ -131,7 +131,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Whatnot listings and live shows](https://apify.com/cleanscrape/whatnot-scraper) | Keywords, categories or Whatnot links, with card filters, in 8 marketplaces |
 | [Whatnot seller tracker](https://apify.com/cleanscrape/whatnot-seller-tracker) | Category leaderboards or seller names, compared with your previous run |
 | [Kick Sponsor Tracker](https://apify.com/cleanscrape/kick-sponsor-tracker) | A live scan by category and language, brand names or streamer names, no login |
-| [Career Page Jobs Scraper](https://apify.com/cleanscrape/career-site-jobs-scraper) | Careers links, company websites or names on Greenhouse, Lever, Ashby, Workable, Recruitee, Personio and Teamtailor |
+| [Career Page Jobs Scraper](https://apify.com/cleanscrape/career-site-jobs-scraper) | Careers links, company websites or names on Workday, Greenhouse, Lever, Ashby, Workable, Recruitee, Personio and Teamtailor |
 | [Economic Calendar](https://apify.com/cleanscrape/economic-calendar-api) | Countries (US, euro area, UK, Canada, Australia) and dates, from 13 official agency calendars |
 | [Video Frame Extractor](https://apify.com/cleanscrape/video-frame-extractor) | Direct video file links, including signed storage, Dropbox and Google Drive links |
 | [Casino bonus checker](https://apify.com/cleanscrape/casino-bonus-checker) | Brand names or casino websites, US, UK and Canada by default, pages read from each country, no login |
