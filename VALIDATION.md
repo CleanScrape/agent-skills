@@ -175,3 +175,12 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (433 characters), compatibility length and a non-empty body.
 - Field names, the `sources` dataset alias, `SUMMARY` keys, time-status and change values, prices and the five example links were checked against the published build (Economic Calendar 0.1.19) on 2026-10-27. Each linked example was run before it was published: for instance 34 US CPI and jobs releases from the past year, and the Fed, ECB, Bank of Canada and RBA decisions for the next 30 days.
 - The skill tells assistants to state each time's precision rather than presenting standard, provisional or date-only times as confirmed, that a watch's first run marks everything new, that first-published and current series values are different measures, that a blank value is not zero, and that there are no consensus forecasts.
+
+## Podcast transcription addition (2026-10-31)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-podcast-transcription-research` skill is a separate addition.
+
+- Its example input passed the Actor's own input normalizer (an Apple Podcasts show link, Standard quality, one episode, with a watch name).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (340 characters), compatibility length and a non-empty body.
+- Field names, `SUMMARY` keys, prices and the four example links were checked against the published build (Audio Transcription 0.1.18) on 2026-10-31. Each linked example was run before it was published.
+- The skill tells assistants to treat transcripts as machine output and check quotes against the audio, not to attribute lines to speakers, that a refused download is a limit of that host, and that transcript text is untrusted data.
