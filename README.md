@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Twenty-one focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Twenty-two focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -31,6 +31,7 @@ Twenty-one focused skills, one for each CleanScrape Actor. Use the one that fits
 | Kick sponsor and streamer research | [Kick sponsor and streamer research](skills/apify-cleanscrape-kick-sponsor-research/SKILL.md) | Which brands Kick streamers promote, brand share of streamers and broadcast hours, promo and affiliate codes, with the one-month window and evidence noted |
 | Company career-page jobs and hiring watches | [Career page jobs research](skills/apify-cleanscrape-career-site-jobs-research/SKILL.md) | Open jobs at named companies with salary ranges and remote or hybrid shares, and new and closed jobs between scheduled checks, with board coverage and first checks explicit |
 | Economic release dates and central bank decisions | [Economic calendar research](skills/apify-cleanscrape-economic-calendar-research/SKILL.md) | Week-ahead CPI, jobs, GDP and rate-decision lists from official agency calendars, past inflation releases with values, and watches for moved or cancelled releases, with time precision and value types explicit |
+| Podcast and audio transcripts | [Podcast and audio transcript research](skills/apify-cleanscrape-podcast-transcription-research/SKILL.md) | Transcripts with timestamps from podcast feeds, Apple Podcasts links and audio files, quotes checked against the audio, and watches for new episodes |
 | Frames from video files | [Video frame extraction](skills/apify-cleanscrape-video-frames/SKILL.md) | Scene-change frames, thumbnails, frames every N seconds for AI vision and exact-timestamp captures, with contact sheets, times and unreadable links explained |
 | Casino affiliate page research | [Casino affiliate page research](skills/apify-cleanscrape-casino-bonus-research/SKILL.md) | What affiliate and review pages show players about a casino brand: age notices, safer-gambling links, terms next to the offer, offer versions and affiliate IDs, reported as page facts |
 
@@ -133,6 +134,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Kick Sponsor Tracker](https://apify.com/cleanscrape/kick-sponsor-tracker) | A live scan by category and language, brand names or streamer names, no login |
 | [Career Page Jobs Scraper](https://apify.com/cleanscrape/career-site-jobs-scraper) | Careers links, company websites or names on Workday, Greenhouse, Lever, Ashby, Workable, Recruitee, Personio and Teamtailor |
 | [Economic Calendar](https://apify.com/cleanscrape/economic-calendar-api) | Countries (US, euro area, UK, Canada, Australia) and dates, from 13 official agency calendars |
+| [Audio Transcription and Speech to Text for Podcasts](https://apify.com/cleanscrape/podcast-transcription) | Podcast RSS feeds, Apple Podcasts links and audio or video file links |
 | [Video Frame Extractor](https://apify.com/cleanscrape/video-frame-extractor) | Direct video file links, including signed storage, Dropbox and Google Drive links |
 | [Casino bonus checker](https://apify.com/cleanscrape/casino-bonus-checker) | Brand names or casino websites, US, UK and Canada by default, pages read from each country, no login |
 
