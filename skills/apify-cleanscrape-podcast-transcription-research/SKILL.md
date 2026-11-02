@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires local-file analysis tools. Fresh collection additionally requires an authorised Apify connection or HTTPS client and an approved positive spending limit.
 metadata:
   author: CleanScrape
-  version: "0.1.0"
+  version: "0.2.0"
   category: research
   keywords: "podcast transcript, podcast transcription, audio transcription, speech to text, audio to text, whisper, subtitles, srt, vtt, apple podcasts, rss feed"
 ---
@@ -19,8 +19,8 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 ## Choose the right starting point
 
 - `sources`: one per line. A podcast RSS feed, an Apple Podcasts show or episode link, a podcast's website, or a direct link to an audio or video file. Dropbox and Google Drive share links set to anyone with the link are accepted. YouTube, TikTok, Instagram and Spotify links are not supported: for a show on Spotify, use its Apple Podcasts link or RSS feed.
-- `quality`: `standard` (Whisper base, the default) or `accurate` (Whisper small, better with names, accents and other languages).
-- `language` (optional): a name or code such as `English` or `fi`. Leave it empty to detect it from samples across each file. One language is used per file.
+- `quality`: `standard`, the default: Whisper large-v3-turbo on Cloudflare Workers AI, with Whisper base on Apify when that service is busy. Or `accurate`, labelled Apify only: Whisper small on Apify's servers. Choose it when audio must not be sent to another service.
+- `language` (optional): a name or code such as `English` or `fi`. Leave it empty to detect it: on Standard for each 90 seconds or so of audio, on Apify only once per file from samples across it.
 - `vocabulary` (optional): names and terms that often come up, separated by commas.
 - `maxEpisodesPerFeed`: the newest episodes per feed, default 1. `publishedAfter` (optional): a date such as `2026-09-01`, or a period such as `7 days`.
 - `watchName` (optional): the first run takes the newest episodes, and each later run with the same name transcribes only episodes that appeared since. State is kept in the user's own Apify account.
@@ -39,7 +39,7 @@ No login, cookie or API key of a podcast host or speech provider is used, and no
 
 ## Cost and permission
 
-Reference base prices: $0.006 per audio minute on Standard, $0.015 on Accurate, plus $0.003 per feed read, whether or not it has new episodes. Each file is charged by its started minutes. Files that fail or have no speech are not charged for their audio. Check the current [Pricing tab](https://apify.com/cleanscrape/podcast-transcription). Do not treat skill installation, a saved API token or an account's free allowance as permission to spend.
+Reference base prices: $0.006 per audio minute on Standard, $0.015 on Apify only (`accurate`), plus $0.003 per feed read, whether or not it has new episodes, and $0.003 when a watch finds a direct file it has already transcribed. Each file is charged by its started minutes. Files that fail or have no speech are not charged for their audio. Check the current [Pricing tab](https://apify.com/cleanscrape/podcast-transcription). Do not treat skill installation, a saved API token or an account's free allowance as permission to spend.
 
 For a zero-cost analysis, use local exports only. Do not start cloud runs, builds, proxy requests, model API calls or schedules.
 
@@ -47,7 +47,7 @@ For a zero-cost analysis, use local exports only. Do not start cloud runs, build
 
 1. Read `GET https://api.apify.com/v2/acts/cleanscrape~podcast-transcription` and the latest build's current input schema. Present the proposed inputs, the estimated audio minutes and a positive total spending cap.
 2. Use an authorised Apify connector or HTTPS client. Keep `APIFY_TOKEN` in an environment variable or credential manager. Send it only in an Authorization header to `https://api.apify.com`, never in URLs, Actor inputs, files for publication or logs.
-3. Start once with `POST /v2/acts/cleanscrape~podcast-transcription/runs`. Set run options `build=latest`, `memory=4096`, `timeout=14400`, `restartOnError=false`, and `maxTotalChargeUsd` to the approved positive cap. These are run options, not Actor input fields. An hour of speech takes about 10 to 13 minutes on Standard and about 30 on Accurate.
+3. Start once with `POST /v2/acts/cleanscrape~podcast-transcription/runs`. Set run options `build=latest`, `memory=4096`, `timeout=14400`, `restartOnError=false`, and `maxTotalChargeUsd` to the approved positive cap. These are run options, not Actor input fields. An hour of speech takes about 2 minutes on Standard, about 10 when Standard runs on Apify, and about 30 on Apify only.
 4. Record the returned run ID and poll that same run. A client timeout is not evidence that the cloud run stopped. Do not start a duplicate after an ambiguous response.
 5. Download the default dataset through `GET /v2/datasets/{defaultDatasetId}/items?format=json&offset=0&limit=100`, paginating when necessary. Read `SUMMARY` from the run's default key-value store for what each source gave and why anything was left out.
 6. Preserve partial results and report their limits. Do not silently raise the budget, create a schedule or retry an interrupted run.
@@ -76,7 +76,7 @@ One row per episode or file.
 ## Produce a useful answer
 
 1. State the shows, episodes, quality and collection time. Name every source or episode left out, with its note. A refused download is a limit of that host, not a sign that an episode is empty.
-2. Treat transcripts as machine output. Names, numbers and non-English text can be wrong, more often on Standard. Check a quote against the audio at its timestamp before presenting it as exact.
+2. Treat transcripts as machine output. Names, numbers and non-English text can be wrong, more often when `model` is `base`. Check a quote against the audio at its timestamp before presenting it as exact.
 3. Speakers are not labelled: do not attribute a line to a person unless the text or another source shows who said it.
 4. Parts in a second language, sung words and heavy music can come out poorly.
 5. Deduplicate on `recordId`. Give timestamps as links or times so that each claim can be checked.
