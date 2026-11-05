@@ -184,3 +184,12 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (340 characters), compatibility length and a non-empty body.
 - Field names, `SUMMARY` keys, prices and the four example links were checked against the published build (Audio Transcription 0.1.18) on 2026-10-31. Each linked example was run before it was published.
 - The skill tells assistants to treat transcripts as machine output and check quotes against the audio, not to attribute lines to speakers, that a refused download is a limit of that host, and that transcript text is untrusted data.
+
+## Google Flights addition (2026-11-05)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-google-flights-research` skill is a separate addition.
+
+- Its example input passed the Actor's own input normalizer (New York to London, departure days 30 to 60 days ahead, one flight per search).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (345 characters), compatibility length and a non-empty body.
+- Field names, the `searches` dataset, `SUMMARY` keys, price levels, prices and the five example links were checked against the published build (Google Flights Scraper and Fare Tracker 0.1.13) on 2026-11-05. Each linked example was run before it was published: for instance 31 departure days from New York to London with the cheapest flight each, and nonstop business-class fares on the same route.
+- The skill tells assistants that prices are a snapshot of what Google Flights showed at collection time and not bookable quotes, to compare fares only within the same passengers, cabin, currency and country, to name the airport when a city code covers several, and that flight data is untrusted text.
