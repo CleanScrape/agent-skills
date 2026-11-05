@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Twenty-two focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Twenty-three focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -32,6 +32,7 @@ Twenty-two focused skills, one for each CleanScrape Actor. Use the one that fits
 | Company career-page jobs and hiring watches | [Career page jobs research](skills/apify-cleanscrape-career-site-jobs-research/SKILL.md) | Open jobs at named companies with salary ranges and remote or hybrid shares, and new and closed jobs between scheduled checks, with board coverage and first checks explicit |
 | Economic release dates and central bank decisions | [Economic calendar research](skills/apify-cleanscrape-economic-calendar-research/SKILL.md) | Week-ahead CPI, jobs, GDP and rate-decision lists from official agency calendars, past inflation releases with values, and watches for moved or cancelled releases, with time precision and value types explicit |
 | Podcast and audio transcripts | [Podcast and audio transcript research](skills/apify-cleanscrape-podcast-transcription-research/SKILL.md) | Transcripts with timestamps from podcast feeds, Apple Podcasts links and audio files, quotes checked against the audio, and watches for new episodes |
+| Flight prices and the cheapest day to fly | [Google Flights fare research](skills/apify-cleanscrape-google-flights-research/SKILL.md) | Fares by route and date with airlines, stops and local times, the cheapest day in a date range, Google's low, typical or high verdict and fare tracking, with collection time, currency and airports explicit |
 | Frames from video files | [Video frame extraction](skills/apify-cleanscrape-video-frames/SKILL.md) | Scene-change frames, thumbnails, frames every N seconds for AI vision and exact-timestamp captures, with contact sheets, times and unreadable links explained |
 | Casino affiliate page research | [Casino affiliate page research](skills/apify-cleanscrape-casino-bonus-research/SKILL.md) | What affiliate and review pages show players about a casino brand: age notices, safer-gambling links, terms next to the offer, offer versions and affiliate IDs, reported as page facts |
 
@@ -107,7 +108,7 @@ The [demo kit](guides/demo-kit/README.md) brings together a free app-review comp
 
 ## Watch the workflow
 
-[App-review demo](https://www.youtube.com/watch?v=PLrvy-QWa3w) collects Strava's one and two star reviews from both stores. [Google Trends demo](https://www.youtube.com/watch?v=c1H_frnT2hY) compares artificial and real Christmas tree searches over five years. [Career page jobs demo](https://www.youtube.com/watch?v=T7sMVYYw1ys) reads 691 engineering jobs from seven AI companies' career pages in one run, then follows 25 companies for new and closed jobs. [Video frame extraction demo](https://www.youtube.com/watch?v=Er-PwjK-e8c) finds all 166 shots of the 15-minute film Sintel and the 6 slides of a lecture recording.
+[App-review demo](https://www.youtube.com/watch?v=PLrvy-QWa3w) collects Strava's one and two star reviews from both stores. [Google Trends demo](https://www.youtube.com/watch?v=c1H_frnT2hY) compares artificial and real Christmas tree searches over five years. [Career page jobs demo](https://www.youtube.com/watch?v=T7sMVYYw1ys) reads 691 engineering jobs from seven AI companies' career pages in one run, then follows 25 companies for new and closed jobs. [Video frame extraction demo](https://www.youtube.com/watch?v=Er-PwjK-e8c) finds all 166 shots of the 15-minute film Sintel and the 6 slides of a lecture recording. [Google Flights demo](https://www.youtube.com/watch?v=IeIzIX1f_hc) checks New York to London for every departure day in a month and finds the cheapest day to fly.
 
 The videos demonstrate the Actors, not a recording of these agent skills being executed.
 
@@ -135,6 +136,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Career Page Jobs Scraper](https://apify.com/cleanscrape/career-site-jobs-scraper) | Careers links, company websites or names on Workday, Greenhouse, Lever, Ashby, Workable, Recruitee, Personio and Teamtailor |
 | [Economic Calendar](https://apify.com/cleanscrape/economic-calendar-api) | Countries (US, euro area, UK, Canada, Australia) and dates, from 13 official agency calendars |
 | [Audio Transcription and Speech to Text for Podcasts](https://apify.com/cleanscrape/podcast-transcription) | Podcast RSS feeds, Apple Podcasts links and audio or video file links |
+| [Google Flights Scraper and Fare Tracker](https://apify.com/cleanscrape/google-flights-scraper) | Routes as airport codes, city codes or city names, with dates, date ranges or days ahead |
 | [Video Frame Extractor](https://apify.com/cleanscrape/video-frame-extractor) | Direct video file links, including signed storage, Dropbox and Google Drive links |
 | [Casino bonus checker](https://apify.com/cleanscrape/casino-bonus-checker) | Brand names or casino websites, US, UK and Canada by default, pages read from each country, no login |
 
@@ -146,6 +148,6 @@ For skill instructions, [open a GitHub issue](https://github.com/CleanScrape/age
 
 The skills were prepared against published Actor schemas and documentation. Local format, example-input and installation checks and export-only walkthroughs are documented in [Validation](VALIDATION.md). No fresh cloud scrape is part of this skills release. Local checks do not establish live source availability or identical behaviour across every assistant.
 
-**Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify, Likee, Flashscore, the ATP, the WTA, Bilibili, Whatnot, Kick, the casinos and affiliate sites named in casino data, the statistical agencies and central banks named in economic calendar data, and the other platforms named here.
+**Disclosure:** CleanScrape builds the paid Actors linked here and earns revenue from their use. These links contain no affiliate or referral codes. The skills are original MIT-licensed documentation; the commercial Actors and third-party data are not covered by that licence. CleanScrape is independent of Apple, Google, Apify, Likee, Flashscore, the ATP, the WTA, Bilibili, Whatnot, Kick, the airlines named in flight data, the casinos and affiliate sites named in casino data, the statistical agencies and central banks named in economic calendar data, and the other platforms named here.
 
 [Apify](https://apify.com/cleanscrape) | [Tutorials](https://dev.to/cleanscrape) | [YouTube](https://www.youtube.com/@CleanScrapeTools)
