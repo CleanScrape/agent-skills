@@ -193,3 +193,12 @@ The checks above remain historical checks of the earlier skills. The new `apify-
 - Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (345 characters), compatibility length and a non-empty body.
 - Field names, the `searches` dataset, `SUMMARY` keys, price levels, prices and the five example links were checked against the published build (Google Flights Scraper and Fare Tracker 0.1.13) on 2026-11-05. Each linked example was run before it was published: for instance 31 departure days from New York to London with the cheapest flight each, and nonstop business-class fares on the same route.
 - The skill tells assistants that prices are a snapshot of what Google Flights showed at collection time and not bookable quotes, to compare fares only within the same passengers, cabin, currency and country, to name the airport when a city code covers several, and that flight data is untrusted text.
+
+## Google Shopping addition (2026-11-06)
+
+The checks above remain historical checks of the earlier skills. The new `apify-cleanscrape-google-shopping-research` skill is a separate addition.
+
+- Its example input passed the Actor's own input normalizer (Sony WH-1000XM5 in the United States, store comparison for 3 products).
+- Agent Skills specification checks passed for frontmatter keys, name format and directory match, description length (363 characters), compatibility length and a non-empty body.
+- Field names, the `stores` and `searches` datasets, `SUMMARY` keys, prices and the five example links were checked against the published build (Google Shopping Scraper and Price Tracker 0.1.12) on 2026-11-06. Each linked example was run before it was published: for instance store comparison for the Sony WH-1000XM5 (40 products and 15 store offers) and 120 UK listings priced in pounds.
+- The skill tells assistants that prices are a snapshot of what Google Shopping showed, that delivery is included only when Google lists it, to compare only the same product, condition and variant (a search's lowest price can be an accessory), and that product and store text is untrusted.
