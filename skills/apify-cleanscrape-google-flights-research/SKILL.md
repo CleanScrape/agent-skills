@@ -19,7 +19,7 @@ Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclos
 ## Choose the right starting point
 
 - `routes`: one per line. Airport codes (`JFK-LAX`), city codes for all of a city's airports (`NYC-LON`, `PAR`, `TYO`, `CHI`, `WAS`, `ROM`, `MIL`, `SEL`, `BJS`), or city names (`London to Rome`). An unreadable route is skipped with a note when others work.
-- `departureDates`: `YYYY-MM-DD`, a range `2026-12-01..2026-12-07`, or `+30` for 30 days after the run date (best for schedules). Empty means `+30`. Past dates and dates more than 330 days ahead are skipped.
+- `departureDates`: `YYYY-MM-DD`, a range `2026-12-01..2026-12-07`, or `+30` for 30 days after the run date (a new departure day on every run, for following fares a month out; use a fixed date to watch one trip for price drops). Empty means `+30`. Past dates and dates more than 330 days ahead are skipped.
 - `tripType`: `one_way` (default) or `round_trip` with `tripLengthDays` (default 7). `returnFlightsFor` (0-5): also save the return flights Google offers for that many of the cheapest outbound flights.
 - `maxFlightsPerSearch` (default 20, up to 100) and `sortBy`: `price` (default), `google`, `duration` or `departure`.
 - Passengers `adults`, `children`, `infantsInSeat`, `infantsOnLap` (at most 9); `cabin`: `economy`, `premium_economy`, `business`, `first`; `maxStops`: `any`, `nonstop`, `one`, `two`; `airlines`: codes such as `BA` or `ONEWORLD`, `SKYTEAM`, `STAR_ALLIANCE`; `currency` (22 supported); `country` (point of sale, such as `us` or `gb`).
