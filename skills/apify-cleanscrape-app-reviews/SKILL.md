@@ -48,7 +48,7 @@ Translate ordinary country names into the supported code and show the choice. Co
 
 Before any paid action, read the current Store pricing and fetch the current input schema. Public metadata is available at `GET https://api.apify.com/v2/acts/cleanscrape~app-store-reviews-scraper`; its `taggedBuilds.latest.buildId` identifies `GET /v2/actor-builds/{buildId}`, which includes `inputSchema` and `readme`.
 
-Base rates checked on 2026-10-21: $0.0002 per delivered review plus $0.01 per allocated GB at startup, minimum one startup event. At 1 GB, 40 delivered rows cost $0.018 before discounts. Startup can be charged with no results. Price changes, account discounts and memory settings must be checked, not assumed.
+Base rates checked on 2026-11-15: $0.0002 per delivered review plus $0.002 per allocated GB at startup, minimum one startup event. At 1 GB, 40 delivered rows cost $0.010 before discounts. Startup can be charged with no results. Price changes, account discounts and memory settings must be checked, not assumed.
 
 Use an existing authorised Apify tool only if it exposes the needed spending controls. Otherwise use the user's approved HTTPS client:
 1. Obtain a positive spending cap authorised for this run. A token or skill installation alone is not spending permission. If no spending is allowed, do not start.
