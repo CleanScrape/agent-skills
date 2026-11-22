@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Twenty-four focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Thirty-six focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -36,6 +36,18 @@ Twenty-four focused skills, one for each CleanScrape Actor. Use the one that fit
 | Product prices and store comparison | [Google Shopping price research](skills/apify-cleanscrape-google-shopping-research/SKILL.md) | Listings by product name, model or barcode with store, condition and delivery, each store's price for a product, price changes between scheduled checks and country-by-country prices, with currency, collection time and like-for-like products explicit |
 | Frames from video files | [Video frame extraction](skills/apify-cleanscrape-video-frames/SKILL.md) | Scene-change frames, thumbnails, frames every N seconds for AI vision and exact-timestamp captures, with contact sheets, times and unreadable links explained |
 | Casino affiliate page research | [Casino affiliate page research](skills/apify-cleanscrape-casino-bonus-research/SKILL.md) | What affiliate and review pages show players about a casino brand: age notices, safer-gambling links, terms next to the offer, offer versions and affiliate IDs, reported as page facts |
+| Upcoming events by city, calendar or topic | [Luma event research](skills/apify-cleanscrape-luma-events-research/SKILL.md) | Luma events with local times, venues, prices, sold-out state, guest counts and hosts' public links, an organizers table and new or changed events between scheduled runs |
+| Text from photos, screenshots and scanned PDFs | [OCR and PDF text extraction](skills/apify-cleanscrape-ocr-text-extraction/SKILL.md) | The text of each file and page in reading order, tables as tab-separated rows, OCR confidence, and the files that could not be read with the reason |
+| Lighthouse scores and Core Web Vitals for many pages | [Bulk Lighthouse audit](skills/apify-cleanscrape-lighthouse-audit/SKILL.md) | Performance, accessibility, best-practices and SEO scores, Core Web Vitals, the top fixes ranked by savings and the failed checks per page and device, with changes since the last run |
+| Download many files from links or another Actor's results | [Bulk file download](skills/apify-cleanscrape-bulk-file-download/SKILL.md) | Each file saved with a download link, name, type, size and SHA-256, optional ZIP archives, and the links that failed with the reason |
+| Questions people ask on Google about a topic | [People Also Ask research](skills/apify-cleanscrape-people-also-ask-research/SKILL.md) | People Also Ask questions with answers and sources, related searches and the AI Overview answer when shown, per keyword and country |
+| What players say about a Steam game | [Steam review research](skills/apify-cleanscrape-steam-reviews-research/SKILL.md) | Reviews with recommendation, playtime, language and votes, game store data, and feeds of new reviews |
+| Scores, schedules and injury reports | [Sports scores and injury reports](skills/apify-cleanscrape-sports-scores-injuries/SKILL.md) | Games with scores, status and betting lines, injury reports by team, and scheduled watches for injury changes |
+| Transcripts and subtitles from audio and video files | [Audio and video transcription](skills/apify-cleanscrape-audio-video-transcription/SKILL.md) | Text with timestamps, SRT and VTT subtitles and detected language for audio and video links |
+| Which apps rank for a keyword in each store | [App Store and Google Play search research](skills/apify-cleanscrape-app-search-research/SKILL.md) | Apps returned for keywords in the App Store and Google Play, in store order, with ratings, installs, price and developer, by country |
+| Find public Telegram channels and groups on a topic | [Telegram channel and group discovery](skills/apify-cleanscrape-telegram-channel-discovery/SKILL.md) | Public channels and groups with subscriber counts, descriptions, verification and the date of their latest post |
+| What is trending on Google right now | [Google Trends Trending Now research](skills/apify-cleanscrape-trending-now-research/SKILL.md) | Trending searches by country with search volume, start time, related queries and news, and the biggest spikes over the past week |
+| Posts and comments from public Telegram channels | [Telegram channel message research](skills/apify-cleanscrape-telegram-messages-research/SKILL.md) | Channel posts with views, reactions, forwards, media and links, comment threads, and new posts between scheduled runs |
 
 These are instructions for a compatible assistant, not a hosted dashboard or an automatic monitoring service. Your assistant performs the analysis using tools you have enabled.
 
