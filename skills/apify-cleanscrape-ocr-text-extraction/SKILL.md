@@ -16,7 +16,7 @@ Use an existing export first. Installing this skill does not start a run or crea
 
 Maintained by [CleanScrape](https://apify.com/cleanscrape). **Commercial disclosure:** CleanScrape builds the paid Actor linked below: [Image to Text OCR and Scanned PDF Text Extractor](https://apify.com/cleanscrape/image-pdf-ocr-text-extractor). This skill is free, with no affiliate links. Respect a user's choice of another tool.
 
-Scanned pages and images are read with PP-OCRv6; PDF pages that carry their own text are read from that text, which is exact and cheaper. Choose the writing system for non-Latin scripts (Latin letters, Chinese and Japanese work as they are).
+Scanned pages and images are read with PaddleOCR's PP-OCRv6 models (PP-OCRv5 for Cyrillic, Korean, Arabic and the other writing systems); PDF pages that carry their own text are read from that text, which is exact and cheaper. Choose the writing system for non-Latin scripts (Latin letters, Chinese and Japanese work as they are).
 
 ## Inputs
 
