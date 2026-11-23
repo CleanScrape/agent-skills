@@ -8,7 +8,7 @@ These skills give an AI assistant the inputs, field definitions and analysis ste
 
 ## Choose a task
 
-Thirty-seven focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
+Thirty-eight focused skills, one for each CleanScrape Actor. Use the one that fits the task rather than installing everything by default.
 
 | Task | Skill | What you get |
 | --- | --- | --- |
@@ -16,6 +16,7 @@ Thirty-seven focused skills, one for each CleanScrape Actor. Use the one that fi
 | Research seasonal search interest | [Google Trends research](skills/apify-cleanscrape-google-trends/SKILL.md) | A comparable timeline, a chart-ready table and an explanation of what the scores mean |
 | Map Your Show exhibitor research | [Map Your Show exhibitor research](skills/apify-cleanscrape-exhibitor-research/SKILL.md) | Sourced shortlists and careful interpretation of directory changes |
 | Shopify product-review research | [Shopify product-review research](skills/apify-cleanscrape-shopify-reviews/SKILL.md) | Judge.me and Okendo feedback with product-group attribution |
+| AliExpress product reviews | [AliExpress product review research](skills/apify-cleanscrape-aliexpress-reviews/SKILL.md) | Ratings, text and translation, photos, country and variant, rating summaries per product and only-new reviews between runs |
 | Google News and publisher-feed research | [Google News and publisher-feed research](skills/apify-cleanscrape-news-research/SKILL.md) | A sourced brief with link status and coverage notes |
 | Pinterest content and destination research | [Pinterest content and destination research](skills/apify-cleanscrape-pinterest-research/SKILL.md) | Content themes and destination-domain tables |
 | Google Hotels stay and offer comparison | [Google Hotels stay and offer comparison](skills/apify-cleanscrape-hotel-comparison/SKILL.md) | Same-stay hotel and provider-offer comparisons |
@@ -134,6 +135,7 @@ The videos demonstrate the Actors, not a recording of these agent skills being e
 | [Google Trends](https://apify.com/cleanscrape/google-trends-scraper) | Search terms, country and time range |
 | [Map Your Show exhibitors](https://apify.com/cleanscrape/event-exhibitor-monitor) | A supported event directory |
 | [Shopify product reviews](https://apify.com/cleanscrape/shopify-reviews-scraper) | Product links using supported Judge.me or Okendo integrations |
+| [AliExpress product reviews](https://apify.com/cleanscrape/aliexpress-reviews-scraper) | Product links, IDs or share links, or a search |
 | [Google News](https://apify.com/cleanscrape/google-news-scraper) | News queries or supported feed inputs |
 | [Pinterest](https://apify.com/cleanscrape/pinterest-scraper) | Supported search or pin inputs |
 | [Google Hotels](https://apify.com/cleanscrape/google-hotels-scraper) | Destination and stay details |
